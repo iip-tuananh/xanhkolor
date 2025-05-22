@@ -152,7 +152,8 @@ header.header {
 
 @media (min-width: 991px) {
     .header-middle {
-        background-color:#050f2d
+        background-color: #2dbfbe;
+        border-top: 1px solid #fecb1a;
     }
 
     .header-middle .col-left {
@@ -173,7 +174,7 @@ header.header {
 }
 
 .header-menu {
-    background-color: #050f2d;
+    background-color: #2dbfbe;
     position: relative;
     z-index: 99
 }
@@ -246,7 +247,7 @@ header.header {
         -o-transform: skew(-23deg);
         transform: skew(-23deg);
         z-index: -1;
-        background: #050f2d
+        background: #2dbfbe;
     }
 }
 
@@ -322,7 +323,7 @@ header.header {
     }
 
     .header-nav>ul.item_big>li.nav-item:hover>a {
-        color: var(--maincolor)
+        color: var(--hover);
     }
 
     .header-nav>ul.item_big>li.nav-item:hover>a.caret-down:after {
@@ -478,7 +479,7 @@ header.header {
     }
 
     .header-nav>ul.item_big>li.active>a {
-        color: var(--maincolor)
+        color: var(--hover);
     }
 
     .header-nav>ul.item_big>li.active>a span>i.icon-down {
