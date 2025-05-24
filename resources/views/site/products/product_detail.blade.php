@@ -47,16 +47,16 @@
                                         <div class="swiper-wrapper" id="lightgallery">
                                             @foreach ($product->galleries as $key => $item)
                                                 <a class="swiper-slide" data-hash="{{ $key + 1 }}"
-                                                    href="{{ $item->image->path }}" title="Click để xem">
-                                                    <img height="540" width="540" src="{{ $item->image->path }}"
-                                                        alt="{{ $product->name }}" data-image="{{ $item->image->path }}"
+                                                    href="{{ $item->image ? $item->image->path : '' }}" title="Click để xem">
+                                                    <img height="540" width="540" src="{{ $item->image ? $item->image->path : '' }}"
+                                                        alt="{{ $product->name }}" data-image="{{ $item->image ? $item->image->path : '' }}"
                                                         class="img-responsive mx-auto d-block swiper-lazy" />
                                                 </a>
                                             @endforeach
-                                            <a class="swiper-slide" data-hash="0" href="{{ $product->image->path }}"
+                                            <a class="swiper-slide" data-hash="0" href="{{ $product->image ? $product->image->path : '' }}"
                                                 title="Click để xem">
-                                                <img height="540" width="540" src="{{ $product->image->path }}"
-                                                    alt="{{ $product->name }}" data-image="{{ $product->image->path }}"
+                                                <img height="540" width="540" src="{{ $product->image ? $product->image->path : '' }}"
+                                                    alt="{{ $product->name }}" data-image="{{ $product->image ? $product->image->path : '' }}"
                                                     class="img-responsive mx-auto d-block swiper-lazy" />
                                             </a>
                                         </div>
@@ -65,17 +65,17 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide" data-hash="0">
                                                 <div class="p-100">
-                                                    <img height="80" width="80" src="{{ $product->image->path }}"
+                                                    <img height="80" width="80" src="{{ $product->image ? $product->image->path : '' }}"
                                                         alt="{{ $product->name }}"
-                                                        data-image="{{ $product->image->path }}" class="swiper-lazy" />
+                                                        data-image="{{ $product->image ? $product->image->path : '' }}" class="swiper-lazy" />
                                                 </div>
                                             </div>
                                             @foreach ($product->galleries as $key => $item)
                                                 <div class="swiper-slide" data-hash="{{ $key + 1 }}">
                                                     <div class="p-100">
-                                                        <img height="80" width="80" src="{{ $item->image->path }}"
+                                                        <img height="80" width="80" src="{{ $item->image ? $item->image->path : '' }}"
                                                             alt="{{ $product->name }}"
-                                                            data-image="{{ $item->image->path }}" class="swiper-lazy" />
+                                                            data-image="{{ $item->image ? $item->image->path : '' }}" class="swiper-lazy" />
                                                     </div>
                                                 </div>
                                             @endforeach
