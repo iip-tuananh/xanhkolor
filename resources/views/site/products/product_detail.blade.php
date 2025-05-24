@@ -45,6 +45,12 @@
                                 <div class="swiper-image">
                                     <div class="swiper-container gallery-top">
                                         <div class="swiper-wrapper" id="lightgallery">
+                                            <a class="swiper-slide" data-hash="0" href="{{ $product->image ? $product->image->path : '' }}"
+                                                title="Click để xem">
+                                                <img height="540" width="540" src="{{ $product->image ? $product->image->path : '' }}"
+                                                    alt="{{ $product->name }}" data-image="{{ $product->image ? $product->image->path : '' }}"
+                                                    class="img-responsive mx-auto d-block swiper-lazy" />
+                                            </a>
                                             @foreach ($product->galleries as $key => $item)
                                                 <a class="swiper-slide" data-hash="{{ $key + 1 }}"
                                                     href="{{ $item->image ? $item->image->path : '' }}" title="Click để xem">
@@ -53,12 +59,6 @@
                                                         class="img-responsive mx-auto d-block swiper-lazy" />
                                                 </a>
                                             @endforeach
-                                            <a class="swiper-slide" data-hash="0" href="{{ $product->image ? $product->image->path : '' }}"
-                                                title="Click để xem">
-                                                <img height="540" width="540" src="{{ $product->image ? $product->image->path : '' }}"
-                                                    alt="{{ $product->name }}" data-image="{{ $product->image ? $product->image->path : '' }}"
-                                                    class="img-responsive mx-auto d-block swiper-lazy" />
-                                            </a>
                                         </div>
                                     </div>
                                     <div class="swiper-container gallery-thumbs">
