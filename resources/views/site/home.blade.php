@@ -130,7 +130,7 @@
                             <div class="contentsv">
                                 <p>
                                     Với công nghệ hàng đầu thế giới cùng hệ thống trang thiết bị máy móc hiện đại. Thực hiện
-                                    theo quy trình của nhà máy sản xuất sơn chuẩn quốc tế. Sơn Xanh Color đem lại vẻ đẹp bền
+                                    theo quy trình của nhà máy sản xuất sơn chuẩn quốc tế. Sơn Xanh Kolor đem lại vẻ đẹp bền
                                     màu cho ngôi nhà bạn.
                                 </p>
                             </div>
@@ -151,7 +151,7 @@
                             <div class="contentsv">
                                 <p>
                                     Chúng tôi sử dụng máy phối màu với công nghệ tiên tiến để cho ra đời màu sơn chuẩn nhất,
-                                    đa dạng về màu sắc. Ngoài ra Sơn Xanh Color luôn cập nhật xu hướng màu sơn mới nhất để
+                                    đa dạng về màu sắc. Ngoài ra Sơn Xanh Kolor luôn cập nhật xu hướng màu sơn mới nhất để
                                     khách hàng có thêm nhiều lựa chọn.
                                 </p>
                             </div>
@@ -171,7 +171,7 @@
                             </div>
                             <div class="contentsv">
                                 <p>
-                                    Sở hữu nguồn nhân lực tài năng sáng tạo, có tay nghề cao đưa ra công thức sơn Xanh Color
+                                    Sở hữu nguồn nhân lực tài năng sáng tạo, có tay nghề cao đưa ra công thức sơn Xanh Kolor
                                     đạt tiêu chuẩn, được nhà nước công nhận. Cùng đội ngũ nhân viên tư vấn nhiệt tình 24/7,
                                     giải đáp mọi thắc mắc của quý khách.
                                 </p>
