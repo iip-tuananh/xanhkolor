@@ -55,7 +55,7 @@ class CartController extends Controller
         \Cart::add([
             'id' => $uniqueId,
             'name' => $product->name,
-            'price' => $product->price,
+            'price' => $product->price ?? $product->base_price,
             'quantity' => $request->qty ? (int)$request->qty : 1,
             'attributes' => [
                 'image' => $product->image->path ?? '',

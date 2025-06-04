@@ -148,9 +148,15 @@
                                                     </div>
                                                     <div class="btn-mua button_actions clearfix">
                                                         <button type="submit" ng-click="addToCartCheckoutFromProductDetail()"
-                                                            class="btn btn_base normal_button btn_add_cart add_to_cart btn-cart">
+                                                            class="btn btn_base normal_button btn_add_cart add_to_cart btn-cart"
+                                                            style="width: 100%;">
                                                             <span>Mua ngay</span>
                                                             Giao hàng tận nơi hoặc nhận tại cửa hàng
+                                                        </button>
+                                                        <button type="submit" ng-click="addToCartFromProductDetail()"
+                                                            class="btn btn_base normal_button"
+                                                            style="border: 1px solid #2dbfbe; background-color: #fff; color: #2dbfbe; border-radius: 10px; padding: 10px 20px; height: 60px; width: 100%; margin-top: 10px; font-size: 18px; transition: all 0.3s ease; cursor: pointer; font-weight: 600;">
+                                                            <span>Thêm vào giỏ hàng</span>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -266,10 +272,10 @@
                     <div class="margin-am">
                         <div class="product-relate-swiper swiper-container">
                             <div class="swiper-wrapper">
-                                @foreach ($productsRelated as $product)
+                                @foreach ($productsRelated as $item)
                                     <div class="swiper-slide">
                                         <div class=" item_product_main">
-                                            @include('site.products.product_item', ['product' => $product])
+                                            @include('site.products.product_item', ['product' => $item])
                                         </div>
                                     </div>
                                 @endforeach
