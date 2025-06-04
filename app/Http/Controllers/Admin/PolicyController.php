@@ -47,6 +47,9 @@ class PolicyController extends Controller
             ->editColumn('status', function ($object) {
                 return $object->status == 1 ? 'Xuất bản' : 'Nháp';
             })
+            ->editColumn('home_status', function ($object) {
+                return $object->home_status == 1 ? 'Hiển thị' : 'Không hiển thị';
+            })
             ->addColumn('action', function ($object) {
                 $result = '';
                 $result .= '<a href="' . route($this->route . '.edit', $object->id) . '" title="Sửa" class="btn btn-sm btn-primary"><i class="fas fa-pencil-alt"></i></a> ';
@@ -90,6 +93,7 @@ class PolicyController extends Controller
             $object->title = $request->title;
             $object->content = $request->content;
             $object->status = $request->status;
+            $object->home_status = $request->home_status;
             $object->save();
 
             DB::commit();
@@ -143,7 +147,7 @@ class PolicyController extends Controller
             $object->title = $request->title;
             $object->content = $request->content;
             $object->status = $request->status;
-
+            $object->home_status = $request->home_status;
             $object->save();
 
             DB::commit();

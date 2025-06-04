@@ -136,6 +136,15 @@
                                                 @endforeach
                                             </ul>
                                         </li>
+                                        @foreach ($policies as $policy)
+                                            <li class="nav-item ">
+                                                <a class="a-img"
+                                                    href="{{ route('front.policy-detail', $policy->slug) }}"
+                                                    title="{{ $policy->title }}">
+                                                    {{ $policy->title }}
+                                                </a>
+                                            </li>
+                                        @endforeach
                                         @foreach ($postCategories as $category)
                                             <li class="nav-item ">
                                                 <a class="a-img"

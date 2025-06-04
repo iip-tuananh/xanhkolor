@@ -13,6 +13,7 @@
             let data = {
                 title: this.title,
                 status: this.status,
+                home_status: this.home_status,
                 content: this.content,
             }
 

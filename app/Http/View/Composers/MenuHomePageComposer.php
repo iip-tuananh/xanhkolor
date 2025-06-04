@@ -8,6 +8,7 @@ use App\Model\Admin\PostCategory;
 use Illuminate\View\View;
 use Illuminate\Support\Facades\Auth;
 use App\Model\Admin\OrderRevenueDetail;
+use App\Model\Admin\Policy;
 use App\Model\Admin\Service;
 
 class MenuHomePageComposer
@@ -51,6 +52,8 @@ class MenuHomePageComposer
 
         $services = Service::query()->where(['status' => 1])->latest()->get();
 
-        $view->with(['productCategories' => $productCategories, 'postCategories' => $postCategories, 'services' => $services]);
+        $policies = Policy::query()->where(['status' => 1, 'home_status' => 1])->latest()->get();
+
+        $view->with(['productCategories' => $productCategories, 'postCategories' => $postCategories, 'services' => $services, 'policies' => $policies]);
     }
 }

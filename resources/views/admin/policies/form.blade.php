@@ -12,8 +12,16 @@
                             <input type="text" class="form-control" ng-model="form.title">
 
                             <span class="invalid-feedback d-block" role="alert">
-				        <strong><% errors.title[0] %></strong>
-			        </span>
+                                <strong><% errors.title[0] %></strong>
+                            </span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Nội dung</label>
+                            <textarea class="form-control ck-editor" ck-editor rows="5" ng-model="form.content"></textarea>
+                            <span class="invalid-feedback d-block" role="alert">
+                                <strong><% errors.content[0] %></strong>
+                            </span>
                         </div>
                     </div>
 
@@ -26,21 +34,22 @@
 
                             </select>
                             <span class="invalid-feedback d-block" role="alert">
-				        <strong><% errors.status[0] %></strong>
-			        </span>
+                                <strong><% errors.status[0] %></strong>
+                            </span>
                         </div>
-                    </div>
 
-                    <div class="col-md-8">
                         <div class="form-group">
-                            <label class="form-label">Nội dung</label>
-                            <textarea class="form-control ck-editor" ck-editor rows="5" ng-model="form.content"></textarea>
+                            <label class="form-label">Hiển thị thành menu trang chủ</label>
+                            <select class="form-control" ng-model="form.home_status">
+                                <option ng-value="1" ng-selected="1 == form.home_status">Hiển thị</option>
+                                <option ng-value="0" ng-selected="0 == form.home_status">Không hiển thị</option>
+
+                            </select>
                             <span class="invalid-feedback d-block" role="alert">
-				                <strong><% errors.content[0] %></strong>
+                                <strong><% errors.home_status[0] %></strong>
                             </span>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
